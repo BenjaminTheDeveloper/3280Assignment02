@@ -2,7 +2,7 @@ Written By Benjamin Medrano
 
 # Assignment 02
 Description:
-This program was written to simulate a liked post similar to a facebook post. 
+This assignment was designed to organize 5 full names by first or last name.
 
 
 
