@@ -75,6 +75,7 @@ namespace Assignment02
                     {
                         Console.WriteLine(name);
                     }
+                    
                     incomplete = false;
 
                 }
@@ -85,10 +86,10 @@ namespace Assignment02
                         var lastName = name.Split(' ').Last();
                         var firstName = name.Split(' ').First();
                         reversedNames.Add(lastName + ", " + firstName);
-
                     }
 
                     incomplete = false;
+                    
                     reversedNames.Sort();
 
                     foreach (string name in reversedNames)
