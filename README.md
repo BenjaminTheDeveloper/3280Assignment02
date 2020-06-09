@@ -16,4 +16,10 @@ This assignment was designed to organize 5 full names by first or last name.
 This program utilizes if, else, and while conditions. 
 The while loop was written to stop errors from happening when a user enters their sort choice. 
 
+# Usage
+1) The Name Organizer will prompt you for five names. (Make sure to not repeat a name, it will catch this.)
+2) Once you complete entering names, it will then ask if you want first names or last names organized. 
+3) Once you choose your sort type (first or last) you can see the results in alphabetic order. 
+
+
 
