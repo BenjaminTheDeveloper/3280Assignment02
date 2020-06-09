@@ -18,12 +18,13 @@ The while loop was written to stop errors from happening when a user enters thei
 
 # Methods 
 1) 
-        public static void insertNames(List<string> fullNames, string currentNameInput);
-            Description: This method allows the user to enter 5 names while adding them to the fullNames List. 
-                         Using the currentNameInput variable, it holds each name entered by the user one at a time before placing it                              into the fullNames List. 
+   public static void insertNames(List<string> fullNames, string currentNameInput);
+   Description: This method allows the user to enter 5 names while adding them to the fullNames List. 
+   Using the currentNameInput variable, it holds each name entered by the user one at a time before placing it                              into the fullNames List. 
             
-2)        public static void sortByUserChoice(bool incomplete, string sortChoice, List<string> fullNames, List<string> reversedNames);
-            Description: This method prompts the user for a choice. Once the user is prompted the method uses the choice to determine                            how it will organize the names. It uses the reverseNames to store last names if the user chooses to order by                            last. Otherwise it will use fullNames to order them by first names. 
+2)       
+   public static void sortByUserChoice(bool incomplete, string sortChoice, List<string> fullNames, List<string> reversedNames);
+   Description: This method prompts the user for a choice. Once the user is prompted the method uses the choice to determine                how it will organize the names. It uses the reverseNames to store last names if the user chooses to order by                            last. Otherwise it will use fullNames to order them by first names. 
 
 # Usage
 1) The Name Organizer will prompt you for five names. (Make sure to not repeat a name, it will catch this.)
