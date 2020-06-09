@@ -1,7 +1,7 @@
-// Benjamin Medrano 
-// 3280 Assignment 02
-// Date: 6/8/20
-
+//Benjamin Medrano
+// CS 3280
+// Assignment 02 
+// 6/8/20
 
 using System;
 using System.Collections.Generic;
@@ -15,15 +15,31 @@ namespace Assignment02
             Console.WriteLine("\t\t\tName Organizer");
 
             var fullNames = new List<string>(); // The (first and last) name of each entered person.
-            string currentNameInput;
             var sortChoice = "";
             var reversedNames = new List<string>();
-            var incomplete = true; 
+            var incomplete = true;
+            string currentNameInput = "";           
+
             Console.WriteLine("Enter 5 People's first and last names EX: Joe Dirt");
 
+            insertNames(fullNames, currentNameInput);
+
+            //Sort the names by first or last
+            sortByUserChoice(incomplete,sortChoice,fullNames,reversedNames);
+               
+            Console.WriteLine("Thank you for using my program!");
+
+            Console.ReadKey();
+            
+        }
+
+        #region
+        public static void insertNames(List<string> fullNames, string currentNameInput)
+        {
+            
             for (int i = 0; i < 5; i++)
             {
-                Console.Write("Name " + (i+1) + ": ");
+                Console.Write("Name " + (i + 1) + ": ");
                 currentNameInput = Console.ReadLine();
 
                 //Logic to check if name is used
@@ -37,14 +53,21 @@ namespace Assignment02
                     fullNames.Add(currentNameInput);
                 }
             }
+        }
+        #endregion
 
-            //Sort the names by first or last
+        #region
+        public static void sortByUserChoice(bool incomplete, string sortChoice, List<string> fullNames, List<string> reversedNames)
+        {
+            const string choiceFirst = "first";
+            const string choiceLast = "last";
+
             while (incomplete)
             {
                 Console.Write("Would you like to sort these names by first or last names? ");
                 sortChoice = Console.ReadLine();
 
-                if (sortChoice.Equals("first"))
+                if (sortChoice.Equals(choiceFirst))
                 {
                     fullNames.Sort();
 
@@ -54,7 +77,8 @@ namespace Assignment02
                     }
                     incomplete = false;
 
-                }else if (sortChoice.Equals("last"))
+                }
+                else if (sortChoice.Equals(choiceLast))
                 {
                     foreach (string name in fullNames)
                     {
@@ -72,20 +96,16 @@ namespace Assignment02
                         Console.WriteLine(name);
                     }
 
-                }else
+                }
+                else
                 {
                     Console.WriteLine("Please enter a valid order type.");
                 }
 
             }
-               
-
-                Console.WriteLine("Thank you for using my program!");
-
-                Console.ReadKey();
-            
         }
-       
+        #endregion
+
     }
 
 
