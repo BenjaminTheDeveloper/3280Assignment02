@@ -1,4 +1,9 @@
-﻿using System;
+// Benjamin Medrano 
+// 3280 Assignment 02
+// Date: 6/8/20
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 namespace Assignment02
